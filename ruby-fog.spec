@@ -5,12 +5,12 @@
 %define	pkgname	fog
 Summary:	The Ruby cloud services library
 Name:		ruby-%{pkgname}
-Version:	1.7.0
+Version:	1.8.0
 Release:	1
 License:	MIT
 Group:		Development/Languages
 Source0:	https://github.com/fog/fog/archive/v%{version}.tar.gz
-# Source0-md5:	5a44426761b54a8497f4c55caf0ffbe4
+# Source0-md5:	da0fd78a5b5f853d39b68edbafdfdbd5
 URL:		http://fog.io/
 BuildRequires:	rpm-rubyprov
 BuildRequires:	rpmbuild(macros) >= 1.656
