@@ -6,12 +6,12 @@
 Summary:	The Ruby cloud services library
 Name:		ruby-%{pkgname}
 Version:	1.7.0
-Release:	0.1
+Release:	1
 License:	MIT
 Group:		Development/Languages
-Source0:	http://rubygems.org/downloads/%{pkgname}-%{version}.gem
-# Source0-md5:	be753f15f70e78952fd65a2ea72792b7
-URL:		http://github.com/fog/fog
+Source0:	https://github.com/fog/fog/archive/v%{version}.tar.gz
+# Source0-md5:	5a44426761b54a8497f4c55caf0ffbe4
+URL:		http://fog.io/
 BuildRequires:	rpm-rubyprov
 BuildRequires:	rpmbuild(macros) >= 1.656
 BuildRequires:	sed >= 4.0
@@ -20,6 +20,7 @@ Requires:	ruby-excon < 1
 Requires:	ruby-excon >= 0.14
 Requires:	ruby-formatador < 0.3
 Requires:	ruby-formatador >= 0.2.0
+Requires:	ruby-hmac
 Requires:	ruby-mime-types
 Requires:	ruby-multi_json < 2
 Requires:	ruby-multi_json >= 1.0
@@ -27,7 +28,6 @@ Requires:	ruby-net-scp >= 1.0.4
 Requires:	ruby-net-ssh >= 2.1.3
 Requires:	ruby-nokogiri < 1.6
 Requires:	ruby-nokogiri >= 1.5.0
-Requires:	ruby-ruby-hmac
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
