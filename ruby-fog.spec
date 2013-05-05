@@ -47,6 +47,8 @@ install -d $RPM_BUILD_ROOT{%{ruby_vendorlibdir},%{_bindir}}
 cp -a lib/* $RPM_BUILD_ROOT%{ruby_vendorlibdir}
 cp -a bin/* $RPM_BUILD_ROOT%{_bindir}
 
+%{__rm} -r $RPM_BUILD_ROOT%{ruby_vendorlibdir}/tasks
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
