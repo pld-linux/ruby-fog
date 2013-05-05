@@ -3,7 +3,7 @@
 %bcond_without	tests		# build without tests
 
 %define	pkgname	fog
-Summary:	Brings clouds to you
+Summary:	The Ruby cloud services library
 Name:		ruby-%{pkgname}
 Version:	1.7.0
 Release:	0.1
